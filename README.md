@@ -14,6 +14,23 @@ All site files live in `static-pages/`.
 | `expand.html` | Expand | Further study, serving and mentoring, the wider community |
 | `connect.html` | Connect | Schedule, first-visit guide, anonymous questions, WhatsApp, contact |
 
+## Two versions
+
+| Folder | Style | Live address (once Pages is on) |
+| --- | --- | --- |
+| `static-pages/` | Website styled like icgc.us | https://akmcgill.github.io/muslim-by-choice/static-pages/ |
+| `classroom-pages/` | Learning platform styled like Google Classroom | https://akmcgill.github.io/muslim-by-choice/classroom-pages/ |
+
+Both use the same content. The classroom version is organized into tabs:
+
+| File | Tab | Purpose |
+| --- | --- | --- |
+| `index.html` | Stream | Class banner, pinned welcome video, announcement posts, upcoming classes |
+| `classwork.html` | Classwork | Lessons and resources by topic (Explore, Establish, Expand), with "Mark as done" progress saved on the learner's device |
+| `calendar.html` | Calendar | Recurring classes and events, calendar embed placeholder |
+| `questions.html` | Questions | Anonymous question form and answered questions |
+| `community.html` | Community | Organizers, mentors, WhatsApp channel and groups, first visit |
+
 ## Committee notes
 
 Notes for the committee (content to confirm or decide) are hidden by default. To see them:
@@ -33,8 +50,8 @@ Note: a GitHub Pages site is public to anyone with the link. The pages ask searc
 
 ## Editing
 
-- **Text:** open a page file in `static-pages/` on GitHub, click the pencil (Edit) icon, change the words between the tags, and click **Commit changes**. The site updates in about a minute.
-- **Colors and fonts:** `static-pages/assets/site.css` holds the shared rules; most styling is written directly on each element.
+- **Text:** open a page file in `static-pages/` or `classroom-pages/` on GitHub, click the pencil (Edit) icon, change the words between the tags, and click **Commit changes**. The site updates in about a minute.
+- **Colors and fonts:** `static-pages/assets/site.css` (most styling there is written on each element) and `classroom-pages/assets/classroom.css` (change `--theme` at the top to recolor the whole classroom version).
 - **Links to other pages:** `index.html`, `explore.html`, `establish.html`, `expand.html`, `connect.html`.
 
 ## Placeholders still to fill
