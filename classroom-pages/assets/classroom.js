@@ -62,4 +62,32 @@
     form.querySelector('.form-ask').hidden = true;
     form.querySelector('.form-thanks').hidden = false;
   });
+  // Discussion: category filter
+  var chips = document.querySelectorAll('.chip[data-filter]');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) {
+        var on = c === chip;
+        c.classList.toggle('is-active', on);
+        c.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      document.querySelectorAll('.thread').forEach(function (t) {
+        t.hidden = !(f === 'all' || t.getAttribute('data-cat') === f);
+      });
+    });
+  });
+
+  // Discussion: new topic form (prototype only: nothing is posted)
+  var tform = document.querySelector('.topic-form');
+  if (tform) tform.addEventListener('submit', function (e) {
+    e.preventDefault();
+    tform.querySelector('.topic-ask').hidden = true;
+    tform.querySelector('.topic-thanks').hidden = false;
+  });
+
+  // Discussion: flag button (prototype only)
+  document.querySelectorAll('.flag-btn').forEach(function (b) {
+    b.addEventListener('click', function () { b.textContent = 'Flagged. A moderator will review it.'; b.disabled = true; });
+  });
 })();

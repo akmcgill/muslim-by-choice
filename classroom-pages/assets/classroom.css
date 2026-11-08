@@ -131,6 +131,46 @@ main.wrap { padding-top: 24px; padding-bottom: 48px; }
 .btn.outline { background: #fff; color: var(--theme); border-color: var(--line); margin-top: 16px; }
 .btn.outline:hover { background: var(--theme-tint); color: var(--theme-dark); }
 
+/* Discussion */
+.disc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: start; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chip { font: inherit; font-size: 14px; font-weight: 500; color: var(--muted); background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 0 14px; min-height: 36px; cursor: pointer; }
+.chip:hover { background: var(--soft); }
+.chip.is-active { background: var(--theme-tint); border-color: var(--theme-tint); color: var(--theme-dark); }
+.threads { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.thread { border-bottom: 1px solid var(--line); }
+.thread:last-child { border-bottom: 0; }
+.thread[hidden] { display: none; }
+.thread summary { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; cursor: pointer; list-style: none; }
+.thread summary::-webkit-details-marker { display: none; }
+.thread summary:hover, .thread details[open] summary { background: var(--soft); }
+.thread-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.thread-title { font-weight: 500; font-size: 16px; }
+.thread-meta { color: var(--muted); font-size: 13px; }
+.cat-tag { display: inline-block; font-size: 12px; font-weight: 500; color: var(--theme-dark); background: var(--theme-tint); border-radius: 4px; padding: 0 6px; margin-right: 4px; }
+.thread-preview { color: var(--muted); font-size: 14px; }
+.thread-side { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex: none; }
+.thread-side .pin { margin-left: 0; }
+.replies { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 13px; }
+.thread-body { padding: 4px 16px 16px 70px; }
+.thread-body .checklist { margin-top: 0; }
+.reply { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+.reply:first-child { border-top: 0; }
+.reply .avatar { width: 32px; height: 32px; }
+.reply p { margin: 2px 0 0; color: var(--ink); }
+.reply-who { font-weight: 500; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.badge { font-size: 11px; font-weight: 500; color: #fff; background: var(--theme); border-radius: 4px; padding: 1px 6px; }
+.reply-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 8px; }
+.reply-actions .btn.outline { margin-top: 0; }
+.flag-btn { font: inherit; font-size: 14px; background: none; border: 0; color: var(--muted); cursor: pointer; gap: 6px; padding: 0; }
+.flag-btn:hover { color: var(--theme); }
+.new-topic label { display: block; font-weight: 500; font-size: 14px; margin: 10px 0 4px; }
+.new-topic label.done { display: inline-flex; font-weight: 400; margin: 12px 0; }
+.new-topic input[type="text"], .new-topic select, .new-topic textarea { width: 100%; font: inherit; padding: 10px; border: 1px solid #80868B; border-radius: 4px; background: #fff; }
+.new-topic textarea { resize: vertical; }
+.new-topic input:focus, .new-topic select:focus, .new-topic textarea:focus { outline: 2px solid var(--theme); border-color: transparent; }
+.topic-thanks p { margin: 4px 0 0; color: var(--muted); }
+
 /* Calendar */
 .cal-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
 .events { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
@@ -173,7 +213,8 @@ main.wrap { padding-top: 24px; padding-bottom: 48px; }
   .appbar { padding: 0 12px; }
   .tabs { order: 3; flex-basis: 100%; justify-content: flex-start; }
   .tab { min-height: 48px; padding: 0 14px; }
-  .stream-grid, .cw-grid, .cal-grid, .q-grid, .two-col { grid-template-columns: minmax(0, 1fr); }
+  .stream-grid, .cw-grid, .cal-grid, .q-grid, .two-col, .disc-grid { grid-template-columns: minmax(0, 1fr); }
+  .thread-body { padding-left: 16px; }
   .side { order: 2; }
   .topics-nav { position: static; }
   .banner h1 { font-size: 28px; }

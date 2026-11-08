@@ -27,6 +27,7 @@ Both use the same content. The classroom version is organized into tabs:
 | --- | --- | --- |
 | `index.html` | Stream | Class banner, pinned welcome video, announcement posts, upcoming classes |
 | `classwork.html` | Classwork | Lessons and resources by topic (Explore, Establish, Expand), with "Mark as done" progress saved on the learner's device |
+| `discussion.html` | Discussion | Moderated forum: category filters, pinned guidelines, sample threads, "start a discussion" form (demo only) |
 | `calendar.html` | Calendar | Recurring classes and events, calendar embed placeholder |
 | `questions.html` | Questions | Anonymous question form and answered questions |
 | `community.html` | Community | Organizers, mentors, WhatsApp channel and groups, first visit |
