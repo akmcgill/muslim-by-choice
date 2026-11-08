@@ -1,0 +1,26 @@
+body { margin: 0; }
+a { color: #A54648; }
+a:hover { color: #772F30; }
+
+/* Committee notes: hidden unless toggled on */
+.notes-off .cn-note { display: none !important; }
+
+.notes-toggle {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.notes-toggle:hover { border-color: #A54648; color: #A54648; }
+
+/* Phones */
+@media (max-width: 640px) {
+  h1 { font-size: 38px !important; }
+  h2 { font-size: 30px !important; }
+}
