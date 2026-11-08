@@ -4,6 +4,8 @@ A clickable prototype of a resource hub for the Muslims by Choice (MBC) class at
 
 ## Pages
 
+All site files live in `static-pages/`.
+
 | File | Page | Purpose |
 | --- | --- | --- |
 | `index.html` | Start Here | Welcome, welcome video, choose your stage, next class, first steps, privacy |
@@ -17,20 +19,22 @@ A clickable prototype of a resource hub for the Muslims by Choice (MBC) class at
 Notes for the committee (content to confirm or decide) are hidden by default. To see them:
 
 - Click **Show committee notes** at the bottom of any page, or
-- Add `?notes=1` to the end of a page address, e.g. `.../index.html?notes=1`
+- Add `?notes=1` to the end of a page address, e.g. `.../static-pages/index.html?notes=1`
 
 ## Viewing the site
 
 Turn on GitHub Pages once: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main`, folder `/ (root)` → Save.** After a minute the site is live at:
 
-https://akmcgill.github.io/muslim-by-choice/
+https://akmcgill.github.io/muslim-by-choice/static-pages/
+
+(GitHub Pages can only publish from the repo root or a `/docs` folder, so the address includes `static-pages/`.)
 
 Note: a GitHub Pages site is public to anyone with the link. The pages ask search engines not to index them.
 
 ## Editing
 
-- **Text:** open a page file on GitHub, click the pencil (Edit) icon, change the words between the tags, and click **Commit changes**. The site updates in about a minute.
-- **Colors and fonts:** `assets/site.css` holds the shared rules; most styling is written directly on each element.
+- **Text:** open a page file in `static-pages/` on GitHub, click the pencil (Edit) icon, change the words between the tags, and click **Commit changes**. The site updates in about a minute.
+- **Colors and fonts:** `static-pages/assets/site.css` holds the shared rules; most styling is written directly on each element.
 - **Links to other pages:** `index.html`, `explore.html`, `establish.html`, `expand.html`, `connect.html`.
 
 ## Placeholders still to fill
